@@ -1,0 +1,29 @@
+{
+    "name": "Minimum Knowledge Required",
+    "short_name": "min(KR)",
+    "icons": [{
+        "src": "img/app-icon-32.png",
+        "type": "image/png",
+        "sizes": "32x32"
+    }, {
+        "src": "img/app-icon-128.png",
+        "sizes": "128x128",
+        "type": "image/png"
+    }, {
+        "src": "img/app-icon-144.png",
+        "sizes": "144x144",
+        "type": "image/png"
+    }, {
+        "src": "img/app-icon-192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+    },{
+        "src": "img/app-icon-384.png",
+        "sizes": "384x384",
+        "type": "image/png"
+    }],
+    "start_url": "/?homescreen=1",
+    "display": "standalone",
+    "background_color": "#e3e3e3",
+    "theme_color": "#27404e"
+}

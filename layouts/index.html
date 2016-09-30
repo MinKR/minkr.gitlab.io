@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>min(KR) - Minimum Knowledge Required</title>
+        <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+        <link href="../../css/styles.css" rel="stylesheet">
+        {{ partial "head" . }}
+    </head>
+    <body>
+        <div class="wrapper">
+            {{ partial "nav" . }}
+            <div class="container">
+                <div class="center">
+                    <h1 class="main">Minimum Knowledge Required</h1>
+                </div>
+                <div class="content">
+                    {{ range where .Data.Pages "Title" "Minimum Knowledge Required" }}
+                        {{.Content}}
+                    {{ end }}
+                </div>
+                <h2>Collections</h2>
+                <div class="card-list">
+                    {{ range where .Site.Pages "Section" "collection" }}
+                        <div class="card">
+                            <div class="card-title">
+                                <h3>
+                                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                                </h3>
+                            </div>
+                            <div class="card-caption">
+                                {{ .Params.caption }}
+                            </div>
+                        </div>
+                    {{ end }}
+                </div>
+                <h2>Guides</h2>
+                <div class="card-list">
+                    {{ range where .Site.Pages "Section" "guide" }}
+                        <div class="card">
+                            <div class="card-title">
+                                <h3>
+                                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                                </h3>
+                            </div>
+                            <div class="card-caption">
+                                {{ .Params.caption }}
+                            </div>
+                        </div>
+                    {{ end }}
+                </div>
+                <br><br>
+            </div>
+            {{ partial "footer" .}}
+        </div>
+    </body>
+</html>

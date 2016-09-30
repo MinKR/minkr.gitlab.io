@@ -1,0 +1,218 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://cdn.jsdelivr.net/font-hack/2.020/css/hack.min.css);
+@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
+html {
+  height: 100%; }
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+  justify-content: center;
+  height: 100%; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto Slab", sans-serif;
+  color: #27404e; }
+
+h1, h2, h3 {
+  margin: 0.7em 0; }
+  h1.main, h2.main, h3.main {
+    font-size: 2.5em; }
+
+h4, h5, h6 {
+  margin: 0.5em 0; }
+
+p {
+  line-height: 1.5; }
+  p img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto; }
+
+a {
+  color: #1594c9; }
+  a:hover {
+    color: #ffaa1f;
+    text-decoration: underline; }
+  a:visited {
+    color: #ff7b4a; }
+
+li {
+  line-height: 1.5; }
+
+.wrapper {
+  min-height: 100%;
+  position: relative; }
+
+.content {
+  margin-bottom: 50px; }
+
+.card-list {
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center; }
+  .card-list .card {
+    flex: 1;
+    box-shadow: 1px 2px #e3e3e3;
+    padding: 10px;
+    margin: 10px;
+    min-width: 220px;
+    max-width: 300px; }
+
+::selection {
+  color: #fff;
+  background: #27404e;
+  text-shadow: none; }
+
+.nav {
+  display: flex;
+  height: 60px;
+  background: #e3e3e3;
+  color: #27404e;
+  box-shadow: 0 1px #cacaca; }
+  .nav .nav-left {
+    display: flex;
+    flex: 1; }
+    .nav .nav-left .nav-logo {
+      padding-left: 45px;
+      width: 115px;
+      position: relative;
+      top: 8px; }
+      .nav .nav-left .nav-logo img {
+        padding: 5px 0; }
+    @media (min-width: 480px) {
+      .nav .nav-left .nav-title {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center; } }
+    @media (max-width: 480px) {
+      .nav .nav-left .nav-title {
+        display: none; } }
+  .nav .nav-links {
+    padding-right: 25px;
+    padding-left: 0;
+    display: flex; }
+    .nav .nav-links li {
+      padding: 0 20px 0 0;
+      line-height: 30px;
+      list-style: none; }
+  .nav a {
+    color: #27404e;
+    text-decoration: none; }
+    .nav a:hover {
+      color: #1594c9; }
+    @media (max-width: 390px) {
+      .nav a {
+        font-size: 13px; } }
+
+pre, code {
+  font-family: "Hack";
+  color: #ff7b4a;
+  background: #e3e3e3; }
+
+.container {
+  padding: 1em 3em;
+  max-width: 1000px;
+  margin: auto;
+  height: 100%; }
+
+table {
+  border: 1px solid black; }
+  table thead tr th {
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    padding: 5px; }
+  table td {
+    padding: 0.5em 1em; }
+
+@media screen and (max-width: 420px) {
+  table {
+    overflow-x: auto;
+    display: block; } }
+
+figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto; }
+
+figure figcaption {
+  text-align: center; }
+
+@media screen and (min-width: 540px) {
+  figure.half {
+    display: inline-block;
+    margin: 0;
+    width: 49%;
+    box-sizing: border-box; }
+  figure.third {
+    display: inline-block;
+    margin: 0;
+    width: 32%;
+    box-sizing: border-box; } }
+
+#TableOfContents ul li a {
+  text-decoration: none;
+  line-height: 1.5; }
+  #TableOfContents ul li a:hover {
+    color: #ffaa1f;
+    text-decoration: underline; }
+  #TableOfContents ul li a:visited {
+    color: #ff7b4a; }
+
+.footer {
+  display: flex;
+  background: #27404e;
+  color: #e3e3e3;
+  text-align: center;
+  height: 30px;
+  width: 100%;
+  box-shadow: 0 1px #385c70;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: 20px;
+  overflow: hidden; }
+  .footer .share .twitter-share, .footer .share .facebook-share {
+    display: inline-block;
+    max-height: 27px;
+    position: relative; }
+  .footer .share .twitter-share {
+    top: 5px; }
+  .footer .share .facebook-share {
+    top: 1px; }
+  @media (min-width: 480px) {
+    .footer .share {
+      padding-left: 45px;
+      width: 125px; }
+    .footer .thats-all {
+      flex: 1;
+      font-family: "Shadows Into Light", cursive;
+      font-size: 1.2em;
+      position: relative;
+      top: 1px; }
+    .footer .coffee {
+      padding-right: 45px;
+      width: 125px;
+      position: relative;
+      top: 4px; }
+      .footer .coffee a {
+        font-size: 0.8em;
+        text-decoration: none; }
+        .footer .coffee a:hover {
+          text-decoration: underline; }
+        .footer .coffee a i {
+          padding-left: 3px; } }
+  @media (max-width: 480px) {
+    .footer .share {
+      flex: 1; }
+    .footer .thats-all, .footer .coffee {
+      display: none; } }
+
+.center {
+  text-align: center; }

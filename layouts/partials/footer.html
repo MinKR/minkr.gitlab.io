@@ -1,0 +1,38 @@
+<div class="footer">
+    <div class="share">
+        <div class="twitter-share">
+            {{ if (isset .Params "author_twitter" ) }}
+            <a href="https://twitter.com/share" class="twitter-share-button" data-via="{{ .Params.author_twitter }}">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            {{ else }}
+            <a href="https://twitter.com/share" class="twitter-share-button" data-via="minkrxyz">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            {{ end }}
+        </div>
+        <div class="facebook-share">
+            <span class="fb-share-button" data-href="{{.Permalink}}" data-layout="button" data-mobile-iframe="true"></span>    
+        </div>
+    </div>
+
+    <div class="thats-all">
+        That's all folks!
+    </div>
+    
+    <!--<div class="coffee">
+        {{ if (not (isset .Params "coffee_link" )) }}
+        <a href="https://cash.me/$sbeleidy/5" target="_blank">
+        {{ else }}
+        <a href="{{ .Params.coffee_link }}" target="_blank">
+        {{ end }}
+            Buy me coffee
+        <i class="em  em-coffee"></i></a>
+    </div>-->
+</div>
+<!-- Emoji -->
+<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+<!-- Facebook Share -->
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=1726964247580262";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>

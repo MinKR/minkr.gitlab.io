@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>min(KR) - {{.Title}}</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Minimum knowledge required to work with {{.Title}}">
+        {{ if (not (isset .Params "author_twitter" )) }}
+        <meta name="author" content="minkrxyz">
+        {{ else }}
+        <meta name="author" content="{{ .Params.author_twitter }}">
+        {{ end }}
+        <meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+        <!--<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/styles/default.min.css">-->
+        <link rel="stylesheet" href="../../css/minkr-code-dark.css">
+        <!--<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>-->
+        <script src="../../plugin/highlight/highlight.js"></script>
+        
+        <script>hljs.initHighlightingOnLoad();</script>
+        <link href="../../css/styles.css" rel="stylesheet">
+        {{ partial "head" . }}
+    </head>
+    <body>
+        <div class="wrapper">
+            {{ partial "nav" . }}
+            <div class="container">
+                <div class="center">
+                    <h1 class="main">{{ .Title }}</h1>
+                    <small>{{ .ReadingTime }} minute read {{ if isset .Params "author_twitter" }}by <a href="https://twitter.com/{{ .Params.author_twitter }}" target="_blank" >@{{ .Params.author_twitter }}</a> {{end}}</small>
+                </div>
+                <div class="toc">
+                    <h2>Table Of Contents</h2>
+                    {{ .TableOfContents }}
+                </div>
+                <div class="content">
+                    {{ .Content }}
+                </div>
+            </div>
+            {{ partial "footer" . }}
+        </div>
+    </body>
+</html>

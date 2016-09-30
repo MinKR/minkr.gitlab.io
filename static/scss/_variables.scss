@@ -1,0 +1,25 @@
+// Fonts
+
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+// @import url(https://fonts.googleapis.com/css?family=Roboto+Mono);
+@import url(https://cdn.jsdelivr.net/font-hack/2.020/css/hack.min.css);
+@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
+
+
+$headerFont: 'Roboto Slab', sans-serif;
+$contentFont: 'Roboto', sans-serif;
+// $codeFont: 'Roboto Mono', ;
+$codeFont: 'Hack', ;
+$cursiveFont: 'Shadows Into Light', cursive;
+
+
+// Colors
+
+$theBlue: #1594c9;
+$theGold: #ffaa1f;
+$theBrown: #ff7b4a;
+$theDark: #27404e;
+$theLight: #e3e3e3;
+$codeRed: #880000;
+$codeBG: #e3e3e3;

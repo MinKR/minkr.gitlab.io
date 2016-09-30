@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>min(KR) - Collections</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Minimum knowledge required to work with {{.Title}}">
+        <meta name="author" content="minkrxyz">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+        <script>hljs.initHighlightingOnLoad();</script>
+        <link href="../../css/styles.css" rel="stylesheet">
+        {{ partial "head" . }}
+    </head>
+    <body>
+        <div class="wrapper">
+            {{ partial "nav" . }}
+            <div class="container">
+                <div class="center">
+                    <h1 class="main">Guides</h1>
+                </div>
+                <div class="content">
+                    The following guides are available: <br>
+                    <div class="card-list">
+                        {{ range .Data.Pages }}
+                            <div class="card">
+                                <div class="card-title">
+                                    <h3>
+                                        <a href="{{ .Permalink }}">{{ .Title }}</a>
+                                    </h3>
+                                </div>
+                                <div class="card-caption">
+                                    {{ .Params.caption }}
+                                </div>
+                            </div>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+            {{ partial "footer" .}}
+        </div>
+    </body>
+</html>

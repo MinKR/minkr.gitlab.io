@@ -1,0 +1,17 @@
+{
+  "name": "mkr",
+  "version": "1.0.0",
+  "description": "Minimum Knowledge Required site",
+  "main": "index.js",
+  "scripts": {
+    "start": "hugo serve",
+    "dev": "hugo serve --watch --buildDrafts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sbeleidy",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.1"
+  }
+}

@@ -1,0 +1,363 @@
+// Fonts
+
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+// @import url(https://fonts.googleapis.com/css?family=Roboto+Mono);
+@import url(https://cdn.jsdelivr.net/font-hack/2.020/css/hack.min.css);
+@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
+
+
+$headerFont: 'Roboto Slab', sans-serif;
+$contentFont: 'Roboto', sans-serif;
+// $codeFont: 'Roboto Mono', ;
+$codeFont: 'Hack', ;
+$cursiveFont: 'Shadows Into Light', cursive;
+
+
+// Colors
+
+$theBlue: #1594c9;
+$theGold: #ffaa1f;
+$theBrown: #ff7b4a;
+$theDark: #27404e;
+$theLight: #e3e3e3;
+
+
+// Typography Settings
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: $contentFont;
+    margin: 0px;
+    justify-content: center;
+    height: 100%;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: $headerFont;
+    color: $theDark;
+}
+
+h1,h2,h3 {
+    margin: 0.7em 0;
+    
+    &.main {
+        font-size: 2.5em;
+    }
+}
+
+h4,h5,h6 {
+    margin: 0.5em 0;
+}
+
+p {
+    line-height: 1.5;
+
+    img {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+    }
+}
+
+a {
+    color: $theBlue;
+
+    &:hover {
+        color: $theGold;
+        text-decoration: underline;
+    }
+
+    &:visited {
+        color: $theBrown;
+    }
+}
+
+li {
+    line-height: 1.5;
+}
+
+
+.wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+.content {
+    margin-bottom: 50px;
+}
+
+.card-list {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+
+    .card {
+        flex: 1;
+        box-shadow: 1px 2px $theLight;
+        padding: 10px;
+        margin: 10px;
+        min-width: 220px;
+        max-width: 300px;
+
+        .card-title {
+
+        }
+
+        .card-caption {
+
+        }
+    }
+}
+
+::selection {
+  color: #fff;
+  background: $theDark;
+  text-shadow: none; 
+}
+
+// Nav
+$navOuterPadding: 45px;
+
+.nav {
+    display: flex;
+    height: 60px;
+    background: $theLight;
+    color: $theDark;
+    box-shadow: 0 1px darken($theLight, 10%);
+
+    .nav-left {
+        display: flex;
+        flex: 1;
+        
+        .nav-logo {
+            padding-left: $navOuterPadding;
+            width: 115px;
+            position: relative;
+            top: 8px;
+
+            img {
+                padding: 5px 0;
+            }
+        }
+
+        @media (min-width: 480px){
+            .nav-title {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+        @media (max-width: 480px){
+            .nav-title{
+                display: none;
+            }
+        }
+        
+    }
+
+    .nav-links {
+        padding-right: ($navOuterPadding - 20px);
+        padding-left: 0;
+        display: flex;
+
+        li {
+            padding: 0 20px 0 0;
+            line-height: 30px;
+            list-style: none;
+        }
+    }
+
+    a {
+        color: $theDark;
+        text-decoration: none;
+
+        &:hover {
+            color: $theBlue;
+        }
+
+        @media (max-width: 390px) {
+            font-size: 13px;
+        }
+    }
+}
+
+
+pre, code {
+    font-family: $codeFont;
+    color: $theBrown;
+    background: $theLight;
+}
+
+// Blocks
+
+.container {
+    padding: 1em 3em;
+    max-width: 1000px;
+    margin: auto;
+    height: 100%;
+}
+
+// Tables
+
+table {
+    border: 1px solid black;
+    
+    thead tr th{
+        font-weight: bold;
+        border-bottom: 1px solid black;
+        padding: 5px;
+    }
+    
+    td {
+        padding: 0.5em 1em;
+    }
+}
+@media screen and (max-width: 420px) {
+	table {
+		overflow-x: auto;
+		display: block;
+	}
+}
+
+// Figures
+
+figure {
+    img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+    }
+
+    figcaption{
+        text-align: center;
+    }
+}
+@media screen and (min-width: 540px) {
+    figure {
+        &.half {
+            display: inline-block;
+            margin: 0;
+            width: 49%;
+            box-sizing: border-box;
+        }
+
+        &.third {
+            display: inline-block;
+            margin: 0;
+            width: 32%;
+            box-sizing: border-box;
+        }
+    }
+}
+
+// TOC
+#TableOfContents {
+    ul li a {
+        text-decoration: none;
+        line-height: 1.5;
+
+        &:hover {
+            color: $theGold;
+            text-decoration: underline;
+        }
+
+        &:visited {
+            color: $theBrown;
+        }
+    }
+}
+
+// footer
+
+$footerHeight: 30px;
+
+.footer {
+    display: flex;
+    background: $theDark;
+    color: $theLight;
+    text-align: center;
+    height: $footerHeight;
+    width: 100%;
+    box-shadow: 0 1px lighten($theDark, 10%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: 20px;
+    overflow: hidden;
+
+    .share {
+
+        .twitter-share, .facebook-share {
+            display: inline-block;
+            max-height: $footerHeight - 3px;
+            position: relative;
+        }
+
+        .twitter-share {
+            top: 5px;
+        }
+        
+        .facebook-share {
+            top: 1px;
+        }
+    }
+
+    @media (min-width: 480px){
+        .share {
+            padding-left: $navOuterPadding;
+            width: 125px;
+        }
+
+        .thats-all {
+            flex: 1;
+            font-family: $cursiveFont;
+            font-size: 1.2em;
+            position: relative;
+            top: 1px;
+        }
+
+        .coffee {
+            padding-right: $navOuterPadding;
+            width: 125px;
+            position: relative;
+            top: 4px;
+
+            a {
+                font-size: 0.8em;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+
+                i {
+                    padding-left: 3px;
+                }
+            }
+        }
+    }
+    @media (max-width: 480px) {
+        .share {
+            flex: 1;
+        }
+
+        .thats-all, .coffee {
+            display: none;
+        }
+    }
+}
+
+// Helpers
+
+.center {
+    text-align: center;
+}
