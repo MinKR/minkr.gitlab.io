@@ -1,6 +1,6 @@
 +++
 
-type= "post"
+type= "guide"
 draft = true
 author_twitter = "sbeleidy"
 coffee_link = "https://cash.me/sbeleidy/5"
