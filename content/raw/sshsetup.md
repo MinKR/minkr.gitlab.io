@@ -1,5 +1,5 @@
 +++
-url = ".well-known/acme-challenge/BnaAIDWTGCTUNDc-JZ8Egn-wIQD7TEVsSUnrIHHcCzI"
+url = ".well-known/acme-challenge/XgGh99ELjh7W591Urr2nt3HeqTiBqb4rM8A8QxLwlfY"
 
 +++
-BnaAIDWTGCTUNDc-JZ8Egn-wIQD7TEVsSUnrIHHcCzI.FRQxP3JzwsPYPTN3mRiJA_nvEmZWqU0PKdJ_Mar8vEo
+XgGh99ELjh7W591Urr2nt3HeqTiBqb4rM8A8QxLwlfY.N-pZkBhN3rbYGJgCo-4qAX3ZI5Jg1m33GjygjUskqcE
