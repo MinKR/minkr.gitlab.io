@@ -4,5 +4,6 @@ title = "Minimum Knowledge Required"
 
 +++
 
-Learn the basics about a skill without any prior knowledge. Check out our guides for
-information about a detailed language or concept or the collections for a group of related guides.
+<p align="center">
+Learn the basics about a skill or concept without any prior knowledge.
+</p>
