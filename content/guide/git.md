@@ -44,7 +44,8 @@ When you are still new to git and still getting the hang of things, you
 benefit a lot from using a tool that shows you exactly what's going on. There
 are many git tools out there but these are the most commonly used:
 
-* [SourceTree](https://www.sourcetreeapp.com/) - recommended
+* [GitKraken](https://www.gitkraken.com/) - recommended
+* [SourceTree](https://www.sourcetreeapp.com/)
 * [GitHub Desktop](https://desktop.github.com/)
 
 ## Commands and concepts

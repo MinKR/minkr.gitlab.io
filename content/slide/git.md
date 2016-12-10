@@ -53,7 +53,8 @@ Popular options:
 
 To simplify interacting with Git you may use one of the following tools:
 
-* [SourceTree](https://www.sourcetreeapp.com/) - recommended
+* [GitKraken](https://www.gitkraken.com/) - recommended
+* [SourceTree](https://www.sourcetreeapp.com/) 
 * [GitHub Desktop](https://desktop.github.com/)
 
 
